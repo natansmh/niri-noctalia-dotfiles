@@ -1,11 +1,24 @@
-    prefer-no-csd
-    screenshot-path null
+prefer-no-csd
+screenshot-path null
 
-    debug {
-        // Allows notification actions and window activation from Noctalia.
-        honor-xdg-activation-with-invalid-serial
-    }
+environment {
+    ELECTRON_OZONE_PLATFORM_HINT "auto"
+        
+    QT_QPA_PLATFORM "wayland"
+    QT_QPA_PLATFORMTHEME "qt5ct"
+    QT_WAYLAND_DISABLE_WINDOWDECORATION "1"
+        
+    GTK_THEME "adw-gtk3-dark"
+	
+    XDG_SESSION_TYPE "wayland"
+    XDG_CURRENT_DESKTOP "niri"
+}
+    
+debug {
+    // Allows notification actions and window activation from Noctalia.
+    honor-xdg-activation-with-invalid-serial
+}
 
-    hotkey-overlay {
-       skip-at-startup
-    }
+hotkey-overlay {
+    skip-at-startup
+}
