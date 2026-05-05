@@ -123,6 +123,14 @@
                     "id": "Clock",
                     "tooltipFormat": "HH:mm ddd, MMM dd",
                     "useCustomFont": false
+                },
+                {
+                    "hideWhenZero": false,
+                    "hideWhenZeroUnread": false,
+                    "iconColor": "none",
+                    "id": "NotificationHistory",
+                    "showUnreadBadge": true,
+                    "unreadBadgeColor": "primary"
                 }
             ],
             "left": [
@@ -172,6 +180,21 @@
             ],
             "right": [
                 {
+                    "defaultSettings": {
+                        "precision": 8,
+                        "showBarValue": true
+                    },
+                    "id": "plugin:noctalia-calculator"
+                },
+                {
+                    "defaultSettings": {
+                        "density": "comfortable",
+                        "maxHistorySize": 100,
+                        "showImagePreviews": true
+                    },
+                    "id": "plugin:clipboard"
+                },
+                {
                     "blacklist": [
                     ],
                     "chevronColor": "none",
@@ -181,14 +204,6 @@
                     "id": "Tray",
                     "pinned": [
                     ]
-                },
-                {
-                    "hideWhenZero": false,
-                    "hideWhenZeroUnread": false,
-                    "iconColor": "none",
-                    "id": "NotificationHistory",
-                    "showUnreadBadge": true,
-                    "unreadBadgeColor": "primary"
                 },
                 {
                     "deviceNativePath": "__default__",
@@ -319,15 +334,10 @@
                     "id": "NightLight"
                 },
                 {
-                    "enableOnStateLogic": false,
-                    "generalTooltipText": "Custom",
-                    "icon": "icons",
-                    "id": "CustomButton",
-                    "onClicked": "",
-                    "onMiddleClicked": "",
-                    "onRightClicked": "",
-                    "showExecTooltip": true,
-                    "stateChecksJson": "[]"
+                    "defaultSettings": {
+                        "iconColor": "none"
+                    },
+                    "id": "plugin:plugin-manager"
                 }
             ]
         }
